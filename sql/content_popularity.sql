@@ -1,0 +1,8 @@
+SELECT 
+    s.title,
+    COUNT(v.user_id) AS total_views,
+    SUM(v.minutes_watched) AS total_watch_time
+FROM viewing_history v
+JOIN shows s ON v.show_id = s.show_id
+GROUP BY s.title
+ORDER BY total_views DESC;
