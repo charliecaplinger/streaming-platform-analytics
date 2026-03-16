@@ -1,0 +1,4 @@
+user_id,signup_date,region,subscription_type
+1,2023-01-05,US,Premium
+2,2023-01-10,US,Basic
+3,2023-01-15,Canada,Premium
